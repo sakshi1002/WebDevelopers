@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.nav-link{
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url('../images/main4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0);
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    opacity: 0.2;
+    z-index: -1;
+
+}
+.nav-item a{
+    color:#f8f3d4;
+    font-weight: bold;
+}
+
+.navbar-brand a{
+    color: #f8f3d4;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: #c7956d;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0px 15px;
+    padding: 15px 32px;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4;
+
+
+}
+
+.header-buttons a:hover{
+    color: brown;
+    text-decoration: none;
+    border-color: brown;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3) ;
+}
+
+p{
+    line-height: 1.4;
+    font-size: 1rem;
+    
+
+}
+.font-weight-bold
+{
+    color: #fff;
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px,0px,20px,0px;
+    color: #fff;
+}
+.mysection{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    align-content: center;
+}
+.mysection div{
+    height: 300px;
+    width: 250px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 1.2 rgba(0,0,0,0.3);
+    text-align: center;
+    background-color: sandybrown;
+    
+}
+.header-extradiv
+{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra-div {
+    background: #fff;
+    padding: 50px!Important;
+    border: medium none;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.extra-div h2,.servicediv h2{
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-spacing: 2;
+    margin: 10px,0,9px,0;
+    font-weight: bold;
+}
+.extra-div:hover{
+    box-shadow: 0 0 30px 1.2 rgba(0,0,0,0.3);
+    /* border-color: chocolate; */
+     background-color: cadetblue; 
+    transform: translateY(-20px);
+}
+.extra-div p:hover{
+    color: #fff;
+}
+
+/* ************************Start What we offer css******************************************** */
+
+.offerdiv{
+    background: #f7f7f9;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.headings{
+margin-bottom: 50%;
+}
+.offerdiv h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.servicediv h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* ************************End What we offer css******************************************** */
+
+.containercount {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containercount h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+containercount p{
+    text-align: center;
+}
+.projectwork{
+    margin: 100px,0;
+}
+
+/* *************************Our pricing starts********************************** */
+.pricing{
+    width: 100%;
+    height: max-content;
+    padding: 50px;
+    position: relative;
+}
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(160deg,#16c9f6 55%,#fff 0%);
+    opacity: 0.2;
+    z-index: -1;
+
+}
+.money{
+    font-size: 40px;
+    line-height: 1px;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+}
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff;
+    padding: 25px,9!important;
+
+}
+.card-body{
+    padding: 30px 0px!important;
+}
+.card-body li{
+    margin: 10px, 0px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: #fff;
+    padding: 30px 0px!important;
+}
+
+.card-footer a{
+    border: 1px solid#606060;
+    border-radius: 100px;
+    margin: 0px 15px;
+    padding: 15px 32px;
+    outline: none;
+    text-align: center;
+    color: #606060;
+    font-size: 1rem;
+    line-height: 1.4;
+
+
+}
+
+.card:hover .card-footer a:hover{
+    color: brown;
+    text-decoration: none;
+    border-color: brown;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3) ;
+    
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3) ;
+    color:#1e5799 ;
+}
+.card:hover .money,.card:hover .card-footer a{
+    color:#1e5799 ;
+}
+.second-card{
+    transform: translateY(-20px);
+    /* box-shadow: 0 0 20px 0 rgba(0,0,0,0.3) ; */
+
+}
+.second-card{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* *************************Our pricing ends********************************** */
+
+/* ******************************Customer Feedback Starts********************************* */
+
+.happyClients{
+    width: 100%;
+    height: fit-content;
+    padding: 80px,0;
+
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3) ;
+    border-radius: 2px;
+
+    transition: 00.3s;
+}
+.box:hover {
+    background-color: #16c9f6;
+}
+.box:hover p{
+    color: #fff;
+}
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+.box a{
+    position: relative;
+
+}
+.box a img{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.carousel slide{
+    margin: 20px;
+}
+.box::after{
+    content: "\f10d";
+    font-family: fontAwesome;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    position: absolute;
+    top: 120%;
+    left: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ******************************Customer Feedback Starts********************************* */
+
+/* ******************************ContactUs Starts********************************* */
+
+.contactus{
+    height: 100vh;
+    width: 100%;
+    padding: 80px,0px;
+    position: relative;
+
+}
+.contactus::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg,#16c9f6 55%,#fff 0%);
+    z-index: -1;
+}
+.form-button{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0px 15px;
+    padding: 15px 32px;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4;
+    background: transparent;
+
+
+}
+form:hover .form-button button{
+
+}
+
+.form-button:hover{
+    color: brown;
+    text-decoration: none;
+    border-color: brown;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3) ;
+
+}
+
+/* ******************************Contactus Ends********************************* */
+/* ********************Newsletter starts********************************** */
+.Newsletter{
+   width: 100%;
+   height: auto;
+   margin: 80px,auto;
+}
+
+.news-input{
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 120px;
+    min-height: 45px;
+}
+.input-group-text{
+    border-radius: 0px 100px 100px 0px;
+}
+/* ********************Newsletter Ends********************************** */
+/* ************************Footer section starts*************************** */
+.footersection{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #3ccdbb;
+    color: #fff;
+    padding: 80px 10px;
+}
+.footerdivt p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footersection li a{
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+#mybutton{
+
+position: fixed;
+bottom: 50px;
+right: 50px;
+z-index: 99;
+border: none;
+background-color: #1e5799;
+padding: 15px;
+border-radius: 10px;
+
+}
+
+#mybutton:hover{
+    background-color: #fff;
+    color: #3ccdbb;
+}
+
+/* ************************Footer section Ends*************************** */
